@@ -9,6 +9,8 @@ import {
     FacebookAuthProvider,
     createUserWithEmailAndPassword,
     signInWithEmailAndPassword,
+    signOut,
+    onAuthStateChanged,
 } from 'firebase/auth';
 
 // Import firestore Database
@@ -54,6 +56,7 @@ export const createUserDocumentFromAuth = async (
     if (!userAuth) return;
 
     const userDocRef = doc(db, 'users', userAuth.uid);
+
     const userSnapshot = await getDoc(userDocRef);
 
     // check if user data is not exists in document in my collection database
@@ -85,3 +88,8 @@ export const signInAuthUserWithEmailAndPassword = async (email, password) => {
     if (!email || !password) return;
     return await signInWithEmailAndPassword(auth, email, password);
 };
+
+export const signOutUser = async () => await signOut(auth);
+
+export const onAuthStateChangedListener = async (callback) =>
+    onAuthStateChanged(auth, callback);

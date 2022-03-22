@@ -10,7 +10,7 @@
     color: white;
     text-transform: uppercase;
     font-weight: bolder;
-    border: 1px transparent;
+    border: 1px solid transparent;
     border-radius: 3px;
     cursor: pointer;
     display: flex;
@@ -22,6 +22,7 @@
         background-color: white;
         color: black;
         border: 1px solid black;
+        transform: scale(1.1);
     }
 
     &.google-sign-in {
