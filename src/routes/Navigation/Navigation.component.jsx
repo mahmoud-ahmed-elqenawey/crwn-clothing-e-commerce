@@ -4,8 +4,8 @@ import './Navigation.styles.scss';
 import { ReactComponent as CrownLogo } from '../../assets/images/crown.svg';
 import { UserContext } from '../../contexts/user.context';
 import { signOutUser } from '../../utils/firebase/firebase.utils';
-import CartIcon from '../CartIcon/CartIcon.component';
-import CartDropdown from '../CartDropdown/CartDropdown.component';
+import CartIcon from '../../components/CartIcon/CartIcon.component';
+import CartDropdown from '../../components/CartDropdown/CartDropdown.component';
 import { CartContext } from '../../contexts/cart.context';
 
 const Navigation = () => {
