@@ -5,7 +5,10 @@ const DirectoryItem = ({ category }) => {
     const { imageUrl, title, route } = category;
 
     return (
-        <Link to={route} className='directory-item-container'>
+        <Link
+            to={route}
+            className={`directory-item-container ${category.size}`}
+        >
             <div
                 className='background-image'
                 style={{
@@ -13,8 +16,7 @@ const DirectoryItem = ({ category }) => {
                 }}
             />
             <div className='body'>
-                <h2>{title}</h2>
-                <p>Shop Now</p>
+                <h2>{title.toUpperCase()}</h2>
             </div>
         </Link>
     );

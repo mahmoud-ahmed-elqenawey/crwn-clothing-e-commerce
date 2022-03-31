@@ -1,0 +1,21 @@
+.section-header {
+    min-height: 70vh;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.336), #99836d),
+        url('../../assets/images/background.webp');
+    background-size: cover;
+
+    .header-title {
+        margin-left: 20px;
+        margin-top: 300px;
+
+        h1 {
+            text-transform: uppercase;
+            color: #ffffff;
+            font-family: roboto;
+            font-weight: bolder;
+            font-size: 50px;
+
+        }
+    }
+
+}

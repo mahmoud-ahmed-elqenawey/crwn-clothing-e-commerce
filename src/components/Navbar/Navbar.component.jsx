@@ -23,10 +23,10 @@ const Navbar = (props) => {
     return (
         <HideOnScroll {...props}>
             {/* Hide nav on scroll */}
-            <AppBar position='fixed'>
+            <AppBar position='fixed' elevation={0} sx={{ borderBottom: 0 }}>
                 {/* App bar */}
-                <Container maxWidth='xl'>
-                    <Toolbar disableGutters>
+                <Container>
+                    <Toolbar>
                         {/* my logo */}
                         <Logo />
                         {/* my logo */}

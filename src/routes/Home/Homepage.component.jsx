@@ -1,14 +1,17 @@
 import './Homepage.styles.scss';
 import Directory from '../../components/Directory/Directory.component';
-import { Box } from '@mui/material';
+import { Container } from '@mui/material';
+import Header from '../../components/Header/Header.component';
+import { Fragment } from 'react';
 
 const Home = () => {
     return (
-        <>
-            <Box sx={{ my: 2 }}>
+        <Fragment>
+            <Header />
+            <Container>
                 <Directory />
-            </Box>
-        </>
+            </Container>
+        </Fragment>
     );
 };
 

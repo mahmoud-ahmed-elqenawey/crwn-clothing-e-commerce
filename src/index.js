@@ -9,14 +9,24 @@ import './index.css';
 import { UserProvider } from './contexts/user.context';
 import { CategoriesProvider } from './contexts/categories.context';
 import { CartProvider } from './contexts/cart.context';
-
+import { ThemeProvider, createTheme } from '@mui/material/styles';
+const theme = createTheme({
+    palette: {
+        mode: 'light',
+        primary: {
+            main: '#fff',
+        },
+    },
+});
 ReactDOM.render(
     <React.StrictMode>
         <BrowserRouter>
             <UserProvider>
                 <CategoriesProvider>
                     <CartProvider>
-                        <App />
+                        <ThemeProvider theme={theme}>
+                            <App />
+                        </ThemeProvider>
                     </CartProvider>
                 </CategoriesProvider>
             </UserProvider>

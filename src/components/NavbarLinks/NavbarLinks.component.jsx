@@ -91,9 +91,8 @@ const NavbarLinks = ({ screen }) => {
                     to='/'
                     component={Link}
                     onClick={handleCloseNavMenu}
-                    sx={{
-                        color: 'white',
-                    }}
+                    variant='text'
+                    color='inherit'
                 >
                     Home
                 </Button>
@@ -101,9 +100,7 @@ const NavbarLinks = ({ screen }) => {
                     to='/shop'
                     component={Link}
                     onClick={handleCloseNavMenu}
-                    sx={{
-                        color: 'white',
-                    }}
+                    color='inherit'
                 >
                     Shop
                 </Button>
