@@ -1,3 +1,4 @@
+import { Typography } from '@mui/material';
 import './CartItem.styles.scss';
 
 const CartItem = ({ cartItem }) => {
@@ -7,10 +8,10 @@ const CartItem = ({ cartItem }) => {
         <div className='cart-item-container'>
             <img src={imageUrl} alt={`${name}`} />
             <div className='item-details'>
-                <span className='name'>{name}</span>
-                <span className='price'>
+                <Typography className='name'>{name}</Typography>
+                <Typography className='price'>
                     {quantity}X{price}
-                </span>
+                </Typography>
             </div>
         </div>
     );
