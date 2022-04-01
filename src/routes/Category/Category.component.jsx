@@ -1,4 +1,5 @@
-import { Fragment, useContext, useEffect, useState } from 'react';
+import { Container, Grid, Typography } from '@mui/material';
+import { useContext, useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import ProductCard from '../../components/ProductCard/ProductCard.component';
 import { CategoriesContext } from '../../contexts/categories.context';
@@ -15,15 +16,19 @@ const Category = () => {
     }, [category, categoriesMap]);
 
     return (
-        <Fragment>
-            <h2 className='category-title'>{category.toUpperCase()}</h2>
-            <div className='category-container'>
+        <Container>
+            <Typography variant='h2' className='category-title'>
+                {category.toUpperCase()}
+            </Typography>
+            <Grid container spacing={2}>
                 {products &&
                     products.map((product) => (
-                        <ProductCard key={product.id} product={product} />
+                        <Grid item xs={12} sm={6} md={3}>
+                            <ProductCard key={product.id} product={product} />
+                        </Grid>
                     ))}
-            </div>
-        </Fragment>
+            </Grid>
+        </Container>
     );
 };
 

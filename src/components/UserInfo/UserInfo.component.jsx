@@ -74,13 +74,7 @@ const UserInfo = () => {
                     </Menu>
                 </>
             ) : (
-                <Button
-                    component={Link}
-                    to='/authentication'
-                    sx={{
-                        color: 'white',
-                    }}
-                >
+                <Button component={Link} to='/authentication' color='inherit'>
                     SignIn
                 </Button>
             )}

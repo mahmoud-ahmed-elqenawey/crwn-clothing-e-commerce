@@ -43,13 +43,13 @@ const Navbar = (props) => {
                         <NavbarLinks />
                         {/* my links */}
 
-                        {/* my cart */}
-                        <Cart />
-                        {/* my cart */}
-
                         {/* my user info */}
                         <UserInfo />
                         {/* my user info */}
+
+                        {/* my cart */}
+                        <Cart />
+                        {/* my cart */}
                     </Toolbar>
                 </Container>
                 {/* App bar */}

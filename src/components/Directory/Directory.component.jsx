@@ -6,34 +6,32 @@ const categories = [
     {
         id: 1,
         title: 'hats',
-        imageUrl: 'https://i.ibb.co/cvpntL1/hats.png',
+        imageUrl: '/cat/5-1_360x.webp',
         route: 'shop/hats',
     },
     {
         id: 2,
         title: 'jackets',
-        imageUrl: 'https://i.ibb.co/px2tCc3/jackets.png',
+        imageUrl: 'cat/1_423afc51-89a7-412d-b94e-1905f35af736_360x.webp',
         route: 'shop/jackets',
     },
     {
         id: 3,
         title: 'sneakers',
-        imageUrl: 'https://i.ibb.co/0jqHpnp/sneakers.png',
+        imageUrl: 'cat/astel3151418e89_q1_2-0_360x.webp',
         route: 'shop/sneakers',
     },
     {
         id: 4,
         title: 'womens',
-        imageUrl:
-            'https://cdn.shopify.com/s/files/1/0256/4594/0810/files/banner_3_720x.png?v=1615515309',
+        imageUrl: 'cat/banner_3_720x.webp',
         route: 'shop/womens',
         size: 'large',
     },
     {
         id: 5,
         title: 'mens',
-        imageUrl:
-            'https://cdn.shopify.com/s/files/1/0332/6420/5963/files/slide7-1_1_720x.jpg?v=1582126438',
+        imageUrl: '/cat/slide7-1_1_720x.webp',
         route: 'shop/mens',
         size: 'large',
     },
